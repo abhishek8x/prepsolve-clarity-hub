@@ -39,7 +39,7 @@ export function Hero() {
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-800 leading-tight mb-6 animate-fade-up stagger-1">
             Structured exam preparation.
             <br />
-            <span className="gradient-text">Without confusion.</span>
+            <span className="gradient-text">For Backbenchers.</span>
           </h1>
 
           {/* Subheadline */}
