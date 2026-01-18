@@ -52,7 +52,7 @@ export default function Methodology() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding bg-[radial-gradient(ellipse_at_top,hsl(222_47%_16%)_0%,hsl(222_47%_11%)_70%)]">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">
@@ -70,7 +70,7 @@ export default function Methodology() {
       </section>
 
       {/* Steps */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
@@ -103,7 +103,7 @@ export default function Methodology() {
       </section>
 
       {/* What We Do vs Don't */}
-      <section className="section-padding bg-card/30">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -159,7 +159,7 @@ export default function Methodology() {
       </section>
 
       {/* Philosophy */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-narrow">
           <div className="glass-card rounded-3xl p-8 md:p-12">
             <div className="grid md:grid-cols-3 gap-8 mb-12">

@@ -52,7 +52,7 @@ export default function Contact() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding bg-[radial-gradient(ellipse_at_top,hsl(222_47%_16%)_0%,hsl(222_47%_11%)_70%)]">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">
@@ -69,7 +69,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-wide">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Methods */}
@@ -89,7 +89,7 @@ export default function Contact() {
                   href={method.action}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-card/50 border border-border hover:border-primary/30 transition-colors group"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-white border border-border hover:border-primary/30 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                     <method.icon size={20} className="text-primary" />
@@ -107,7 +107,7 @@ export default function Contact() {
               ))}
 
               {/* Response time */}
-              <div className="flex items-center gap-3 p-4 rounded-xl bg-muted/30">
+              <div className="flex items-center gap-3 p-4 rounded-xl bg-white border border-border">
                 <Clock size={20} className="text-muted-foreground" />
                 <p className="text-sm text-muted-foreground">
                   We typically respond within 24-48 hours
@@ -132,7 +132,7 @@ export default function Contact() {
                         type="text"
                         placeholder="Enter your name"
                         required
-                        className="bg-background border-border"
+                        className="bg-white border-border"
                       />
                     </div>
                     <div>
@@ -143,7 +143,7 @@ export default function Contact() {
                         type="email"
                         placeholder="you@example.com"
                         required
-                        className="bg-background border-border"
+                        className="bg-white border-border"
                       />
                     </div>
                   </div>
@@ -156,7 +156,7 @@ export default function Contact() {
                       type="text"
                       placeholder="What is this about?"
                       required
-                      className="bg-background border-border"
+                      className="bg-white border-border"
                     />
                   </div>
 
@@ -168,7 +168,7 @@ export default function Contact() {
                       placeholder="Tell us more about your question or feedback..."
                       required
                       rows={5}
-                      className="bg-background border-border resize-none"
+                      className="bg-white border-border resize-none"
                     />
                   </div>
 
@@ -190,7 +190,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ Teaser */}
-      <section className="py-16 bg-card/30 border-t border-border">
+      <section className="py-16 bg-white border-t border-border">
         <div className="container-narrow text-center">
           <MessageCircle size={32} className="text-primary mx-auto mb-4" />
           <h2 className="font-display text-2xl font-bold text-foreground mb-3">
@@ -206,7 +206,7 @@ export default function Contact() {
               { q: "Can I access content offline?", a: "Premium users can download resources." },
               { q: "How is this different from coaching?", a: "We focus on self-study with structure." },
             ].map((faq, i) => (
-              <div key={i} className="p-4 rounded-lg bg-background/50 border border-border">
+              <div key={i} className="p-4 rounded-lg bg-muted border border-border">
                 <p className="font-medium text-foreground text-sm mb-1">{faq.q}</p>
                 <p className="text-muted-foreground text-sm">{faq.a}</p>
               </div>

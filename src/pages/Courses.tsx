@@ -90,7 +90,7 @@ export default function Courses() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding bg-[radial-gradient(ellipse_at_top,hsl(222_47%_16%)_0%,hsl(222_47%_11%)_70%)]">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">
@@ -108,7 +108,7 @@ export default function Courses() {
       </section>
 
       {/* Filters */}
-      <section className="py-8 bg-card/50 border-y border-border sticky top-16 md:top-20 z-40 backdrop-blur-xl">
+      <section className="py-8 bg-white border-y border-border sticky top-16 md:top-20 z-40 backdrop-blur-xl">
         <div className="container-wide">
           <div className="flex items-center justify-center gap-2 flex-wrap">
             {categories.map((cat) => (
@@ -118,7 +118,7 @@ export default function Courses() {
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                   activeCategory === cat.id
                     ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                    : "bg-muted text-foreground hover:bg-muted/80"
                 }`}
               >
                 {cat.name}
@@ -129,7 +129,7 @@ export default function Courses() {
       </section>
 
       {/* Course Grid */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredCourses.map((course) => (
@@ -166,7 +166,7 @@ export default function Courses() {
                 </div>
 
                 {/* Footer */}
-                <div className="px-6 py-4 border-t border-border bg-card/50">
+                <div className="px-6 py-4 border-t border-border bg-muted/50">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
                       <span className="flex items-center gap-1">
@@ -200,7 +200,7 @@ export default function Courses() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 bg-card/30 border-y border-border">
+      <section className="py-16 bg-white border-y border-border">
         <div className="container-wide">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[

@@ -35,7 +35,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-muted">
       <div className="container-wide">
         <div className="text-center mb-16">
           <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">
@@ -53,7 +53,7 @@ export function Features() {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group relative p-6 rounded-2xl bg-card/50 border border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
+              className="group relative p-6 rounded-2xl bg-white border border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md"
             >
               {/* Hover gradient */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

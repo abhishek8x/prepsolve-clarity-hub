@@ -30,7 +30,7 @@ export default function About() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding bg-[radial-gradient(ellipse_at_top,hsl(222_47%_16%)_0%,hsl(222_47%_11%)_70%)]">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">
@@ -47,9 +47,9 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-narrow">
-          <div className="prose prose-invert max-w-none">
+          <div className="max-w-none">
             <div className="glass-card rounded-3xl p-8 md:p-12 mb-12">
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
                 The Problem We Saw
@@ -105,7 +105,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="section-padding bg-card/30">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -135,7 +135,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-narrow text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
             Ready to Experience Clarity?

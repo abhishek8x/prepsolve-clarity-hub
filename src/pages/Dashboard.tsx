@@ -49,7 +49,7 @@ export default function Dashboard() {
   if (!isLoggedIn) {
     return (
       <Layout hideFooter>
-        <div className="min-h-[calc(100vh-80px)] flex items-center justify-center py-12 px-4">
+        <div className="min-h-[calc(100vh-80px)] flex items-center justify-center py-12 px-4 bg-muted">
           <div className="w-full max-w-md">
             <div className="glass-card rounded-2xl p-8">
               <div className="text-center mb-8">
@@ -77,7 +77,7 @@ export default function Dashboard() {
                       <Input 
                         type="text" 
                         placeholder="Enter your name"
-                        className="pl-10 bg-background border-border"
+                        className="pl-10 bg-white border-border"
                       />
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export default function Dashboard() {
                     <Input 
                       type="email" 
                       placeholder="you@example.com"
-                      className="pl-10 bg-background border-border"
+                      className="pl-10 bg-white border-border"
                     />
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export default function Dashboard() {
                     <Input 
                       type="password" 
                       placeholder="••••••••"
-                      className="pl-10 bg-background border-border"
+                      className="pl-10 bg-white border-border"
                     />
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function Dashboard() {
     <Layout hideFooter>
       <div className="flex min-h-[calc(100vh-80px)]">
         {/* Sidebar */}
-        <aside className="hidden lg:flex w-64 flex-col bg-card/50 border-r border-border">
+        <aside className="hidden lg:flex w-64 flex-col bg-white border-r border-border">
           <div className="p-6">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
@@ -157,7 +157,7 @@ export default function Dashboard() {
                     "w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors",
                     item.active 
                       ? "bg-primary/10 text-primary" 
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   )}
                 >
                   <item.icon size={18} />
@@ -170,7 +170,7 @@ export default function Dashboard() {
           <div className="mt-auto p-6 border-t border-border">
             <button 
               onClick={() => setIsLoggedIn(false)}
-              className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
             >
               <LogOut size={18} />
               Sign Out
@@ -179,7 +179,7 @@ export default function Dashboard() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 p-6 lg:p-8 overflow-auto">
+        <main className="flex-1 p-6 lg:p-8 overflow-auto bg-muted">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="mb-8">
@@ -225,7 +225,7 @@ export default function Dashboard() {
 
                   <div className="space-y-4">
                     {recentLessons.map((lesson, i) => (
-                      <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-background/50 border border-border hover:border-primary/30 transition-colors cursor-pointer group">
+                      <div key={i} className="flex items-center gap-4 p-4 rounded-xl bg-muted border border-border hover:border-primary/30 transition-colors cursor-pointer group">
                         <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                           <Play size={20} className="text-primary" />
                         </div>
@@ -234,7 +234,7 @@ export default function Dashboard() {
                             {lesson.title}
                           </h3>
                           <p className="text-xs text-muted-foreground">{lesson.course}</p>
-                          <div className="mt-2 h-1.5 bg-muted rounded-full overflow-hidden">
+                          <div className="mt-2 h-1.5 bg-border rounded-full overflow-hidden">
                             <div 
                               className="h-full bg-primary rounded-full"
                               style={{ width: `${lesson.progress}%` }}
@@ -259,7 +259,7 @@ export default function Dashboard() {
 
                   <div className="space-y-3">
                     {upcomingRevisions.map((item, i) => (
-                      <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-background/50 border border-border">
+                      <div key={i} className="flex items-center justify-between p-3 rounded-lg bg-muted border border-border">
                         <div>
                           <p className="text-sm font-medium text-foreground">{item.topic}</p>
                           <p className="text-xs text-muted-foreground">{item.due}</p>
