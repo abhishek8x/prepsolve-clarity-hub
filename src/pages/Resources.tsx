@@ -109,7 +109,7 @@ export default function Resources() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding bg-[radial-gradient(ellipse_at_top,hsl(222_47%_16%)_0%,hsl(222_47%_11%)_70%)]">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">
@@ -131,7 +131,7 @@ export default function Resources() {
                 placeholder="Search resources..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-12 h-12 bg-card border-border text-base"
+                className="pl-12 h-12 bg-muted border-border text-base"
               />
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function Resources() {
       </section>
 
       {/* Filters */}
-      <section className="py-6 bg-card/50 border-y border-border sticky top-16 md:top-20 z-40 backdrop-blur-xl">
+      <section className="py-6 bg-white border-y border-border sticky top-16 md:top-20 z-40 backdrop-blur-xl">
         <div className="container-wide">
           <div className="flex items-center justify-center gap-2 flex-wrap">
             {categories.map((cat) => (
@@ -150,7 +150,7 @@ export default function Resources() {
                   "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all",
                   activeCategory === cat.id
                     ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                    : "bg-muted text-foreground hover:bg-muted/80"
                 )}
               >
                 <cat.icon size={16} />
@@ -162,7 +162,7 @@ export default function Resources() {
       </section>
 
       {/* Resources Grid */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredResources.map((resource) => {

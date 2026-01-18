@@ -30,7 +30,7 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/50"
+          ? "bg-white/95 backdrop-blur-xl border-b border-border shadow-sm"
           : "bg-transparent"
       )}
     >
@@ -56,7 +56,7 @@ export function Header() {
                   "px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200",
                   location.pathname === item.href
                     ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                    : "text-foreground/70 hover:text-foreground hover:bg-muted"
                 )}
               >
                 {item.name}
@@ -80,7 +80,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+            className="md:hidden p-2 text-foreground/70 hover:text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -89,7 +89,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border/50 animate-fade-up">
+          <div className="md:hidden py-4 border-t border-border bg-white animate-fade-up">
             <nav className="flex flex-col gap-1">
               {navigation.map((item) => (
                 <Link
@@ -100,13 +100,13 @@ export function Header() {
                     "px-4 py-3 rounded-lg text-sm font-medium transition-colors",
                     location.pathname === item.href
                       ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                      : "text-foreground/70 hover:text-foreground hover:bg-muted"
                   )}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border/50">
+              <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
                 <Link to="/dashboard" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="outline" className="w-full">
                     Sign In

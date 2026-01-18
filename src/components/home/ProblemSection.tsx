@@ -25,7 +25,7 @@ const problems = [
 
 export function ProblemSection() {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-muted">
       <div className="container-wide">
         <div className="text-center mb-16">
           <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">

@@ -4,22 +4,22 @@ import { ArrowRight } from "lucide-react";
 
 export function CTASection() {
   return (
-    <section className="section-padding bg-white relative overflow-hidden">
+    <section className="section-padding bg-muted relative overflow-hidden">
       
-      {/* Soft light background accent */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(168_64%_52%_/_0.06)_0%,transparent_70%)]" />
+      {/* Soft background accent */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(217_94%_53%_/_0.06)_0%,transparent_70%)]" />
 
       <div className="container-narrow relative z-10">
         <div className="text-center">
 
           {/* Heading */}
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Ready to Prepare{" "}
             <span className="gradient-text">Smarter</span>?
           </h2>
 
           {/* Description */}
-          <p className="text-slate-600 text-lg mb-10 max-w-xl mx-auto">
+          <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
             Join students who have chosen clarity over chaos.
             Start your structured exam preparation journey today.
           </p>

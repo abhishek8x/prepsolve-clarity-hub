@@ -1,6 +1,6 @@
 export function FounderSection() {
   return (
-    <section className="section-padding bg-card/30">
+    <section className="section-padding bg-white">
       <div className="container-narrow">
         <div className="text-center mb-12">
           <p className="text-primary text-sm font-medium uppercase tracking-wider mb-3">

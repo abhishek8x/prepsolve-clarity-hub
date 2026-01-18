@@ -6,16 +6,16 @@ export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white">
       
-      {/* Background (light only) */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(200_20%_98%)_0%,hsl(200_15%_95%)_70%)]" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
 
-      {/* Subtle light grid */}
+      {/* Subtle grid */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `
-            linear-gradient(hsl(220 14% 90%) 1px, transparent 1px),
-            linear-gradient(90deg, hsl(220 14% 90%) 1px, transparent 1px)
+            linear-gradient(hsl(220 14% 80%) 1px, transparent 1px),
+            linear-gradient(90deg, hsl(220 14% 80%) 1px, transparent 1px)
           `,
           backgroundSize: "60px 60px",
         }}
@@ -36,14 +36,14 @@ export function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-800 leading-tight mb-6 animate-fade-up stagger-1">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-6 animate-fade-up stagger-1">
             Structured exam preparation.
             <br />
             <span className="gradient-text">For Backbenchers.</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up stagger-2">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up stagger-2">
             Stop drowning in endless content. PrepSolve gives you clarity on what
             to study, what to skip, and how to prepare smarter — not harder.
           </p>
@@ -64,7 +64,7 @@ export function Hero() {
           </div>
 
           {/* Trust indicators */}
-          <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-slate-500 animate-fade-up stagger-4">
+          <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-muted-foreground animate-fade-up stagger-4">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary" />
               <span className="text-sm">Board Exams</span>
@@ -83,7 +83,7 @@ export function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-100 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-muted to-transparent" />
     </section>
   );
 }

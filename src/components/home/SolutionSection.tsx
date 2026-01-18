@@ -25,7 +25,7 @@ const solutions = [
 
 export function SolutionSection() {
   return (
-    <section className="section-padding bg-card/30">
+    <section className="section-padding bg-white">
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Content */}
@@ -46,7 +46,7 @@ export function SolutionSection() {
               {solutions.map((solution, index) => (
                 <div
                   key={solution.title}
-                  className="flex items-start gap-4 p-4 rounded-xl bg-background/50 border border-border/50 hover:border-primary/30 transition-colors"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-muted border border-border hover:border-primary/30 transition-colors"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <solution.icon size={20} className="text-primary" />
@@ -68,13 +68,13 @@ export function SolutionSection() {
           <div className="relative">
             <div className="relative aspect-square max-w-md mx-auto">
               {/* Decorative circles */}
-              <div className="absolute inset-0 rounded-full border border-border/30" />
-              <div className="absolute inset-8 rounded-full border border-border/40" />
+              <div className="absolute inset-0 rounded-full border border-border" />
+              <div className="absolute inset-8 rounded-full border border-border" />
               <div className="absolute inset-16 rounded-full border border-primary/20" />
               
               {/* Center element */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-32 h-32 rounded-2xl bg-primary/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center glow-effect">
+                <div className="w-32 h-32 rounded-2xl bg-primary/10 backdrop-blur-xl border border-primary/30 flex items-center justify-center glow-effect">
                   <div className="text-center">
                     <div className="text-4xl font-display font-bold text-primary">PS</div>
                     <div className="text-xs text-primary/80 mt-1">PrepSolve</div>
@@ -83,16 +83,16 @@ export function SolutionSection() {
               </div>
 
               {/* Floating elements */}
-              <div className="absolute top-8 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-card border border-border text-sm text-foreground animate-float">
+              <div className="absolute top-8 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-white border border-border text-sm text-foreground shadow-sm animate-float">
                 Structure
               </div>
-              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-card border border-border text-sm text-foreground animate-float" style={{ animationDelay: '2s' }}>
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg bg-white border border-border text-sm text-foreground shadow-sm animate-float" style={{ animationDelay: '2s' }}>
                 Revision
               </div>
-              <div className="absolute top-1/2 left-4 -translate-y-1/2 px-4 py-2 rounded-lg bg-card border border-border text-sm text-foreground animate-float" style={{ animationDelay: '1s' }}>
+              <div className="absolute top-1/2 left-4 -translate-y-1/2 px-4 py-2 rounded-lg bg-white border border-border text-sm text-foreground shadow-sm animate-float" style={{ animationDelay: '1s' }}>
                 Focus
               </div>
-              <div className="absolute top-1/2 right-4 -translate-y-1/2 px-4 py-2 rounded-lg bg-card border border-border text-sm text-foreground animate-float" style={{ animationDelay: '3s' }}>
+              <div className="absolute top-1/2 right-4 -translate-y-1/2 px-4 py-2 rounded-lg bg-white border border-border text-sm text-foreground shadow-sm animate-float" style={{ animationDelay: '3s' }}>
                 Clarity
               </div>
             </div>
