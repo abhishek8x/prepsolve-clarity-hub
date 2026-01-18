@@ -11,8 +11,8 @@ const contactMethods = [
     icon: Mail,
     title: "Email Us",
     description: "For general inquiries and support",
-    value: "hello@prepsolve.com",
-    action: "mailto:teamprepsolve@gmail.com",
+    value: "abhishek@prepsolve.com",
+    action: "mailto:abhishek@prepsolve.com",
   },
   {
     icon: Send,
