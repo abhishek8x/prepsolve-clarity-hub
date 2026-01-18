@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Courses from "./pages/Courses";
+import Class12Physics from "@/pages/Class12Physics";
 import Methodology from "./pages/Methodology";
 import Dashboard from "./pages/Dashboard";
 import Resources from "./pages/Resources";
