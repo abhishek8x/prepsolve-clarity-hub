@@ -179,10 +179,12 @@ export default function Courses() {
                       </span>
                     </div>
                     {!course.coming && (
-                      <Button variant="ghost" size="sm" className="text-primary">
-                        View
-                        <ArrowRight size={14} />
-                      </Button>
+                      <a href="/class-12-physics">
+  <Button variant="ghost" size="sm" className="text-primary">
+    View
+  </Button>
+</a>
+
                     )}
                   </div>
                 </div>
