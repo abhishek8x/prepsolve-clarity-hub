@@ -43,7 +43,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://youtube.com"
+                href="https://youtube.com/@prepsolve"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -51,7 +51,7 @@ export function Footer() {
                 <Youtube size={20} />
               </a>
               <a
-                href="https://t.me"
+                href="https://t.me/prepsolve"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -59,7 +59,7 @@ export function Footer() {
                 <Send size={20} />
               </a>
               <a
-                href="mailto:hello@prepsolve.com"
+                href="mailto:abhishek@prepsolve.com"
                 className="w-10 h-10 rounded-lg bg-white border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
               >
                 <Mail size={20} />
